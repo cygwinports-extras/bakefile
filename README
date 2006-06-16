@@ -1,0 +1,231 @@
+bakefile
+------------------------------------------
+Bakefile is cross-platform, cross-compiler native makefiles generator.
+It takes compiler-independent description of build tasks as input and
+generates native makefile (autoconf's Makefile.in, Visual C++ project,
+bcc makefile etc.). Bakefile's task is to generate native makefiles, so
+that people can keep using their favorite tools.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  pylibxml2-2.6.26-1
+  python-2.4.3-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.2-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  sed-4.1.5-1
+  swig-1.3.25-1
+
+Canonical website:
+  http://bakefile.sourceforge.net/
+
+Canonical download:
+  http://prdownloads.sourceforge.net/bakefile/
+
+-------------------------------------------
+
+Build instructions:
+  unpack bakefile-0.2.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./bakefile-0.2.0-X.cygport all
+
+This will create:
+  /usr/src/bakefile-0.2.0-X-src.tar.bz2
+  /usr/src/bakefile-0.2.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/bakefile
+  /usr/bin/bakefile_gen
+  /usr/bin/bakefilize
+  /usr/lib/bakefile/_bottlenecks.dll
+  /usr/lib/bakefile/_bottlenecks.la
+  /usr/lib/bakefile/bakefile.py
+  /usr/lib/bakefile/bakefile.pyc
+  /usr/lib/bakefile/bakefile.pyo
+  /usr/lib/bakefile/bakefile_gen.py
+  /usr/lib/bakefile/bakefile_gen.pyc
+  /usr/lib/bakefile/bakefile_gen.pyo
+  /usr/lib/bakefile/bottlenecks.py
+  /usr/lib/bakefile/bottlenecks.pyc
+  /usr/lib/bakefile/bottlenecks.pyo
+  /usr/lib/bakefile/config.py
+  /usr/lib/bakefile/config.pyc
+  /usr/lib/bakefile/config.pyo
+  /usr/lib/bakefile/containers.py
+  /usr/lib/bakefile/containers.pyc
+  /usr/lib/bakefile/containers.pyo
+  /usr/lib/bakefile/dependencies.py
+  /usr/lib/bakefile/dependencies.pyc
+  /usr/lib/bakefile/dependencies.pyo
+  /usr/lib/bakefile/empy/__init__.py
+  /usr/lib/bakefile/empy/__init__.pyc
+  /usr/lib/bakefile/empy/__init__.pyo
+  /usr/lib/bakefile/empy/em.py
+  /usr/lib/bakefile/empy/em.pyc
+  /usr/lib/bakefile/empy/em.pyo
+  /usr/lib/bakefile/errors.py
+  /usr/lib/bakefile/errors.pyc
+  /usr/lib/bakefile/errors.pyo
+  /usr/lib/bakefile/finalize.py
+  /usr/lib/bakefile/finalize.pyc
+  /usr/lib/bakefile/finalize.pyo
+  /usr/lib/bakefile/flatten.py
+  /usr/lib/bakefile/flatten.pyc
+  /usr/lib/bakefile/flatten.pyo
+  /usr/lib/bakefile/formats.py
+  /usr/lib/bakefile/formats.pyc
+  /usr/lib/bakefile/formats.pyo
+  /usr/lib/bakefile/mk.py
+  /usr/lib/bakefile/mk.pyc
+  /usr/lib/bakefile/mk.pyo
+  /usr/lib/bakefile/mk_dump.py
+  /usr/lib/bakefile/mk_dump.pyc
+  /usr/lib/bakefile/mk_dump.pyo
+  /usr/lib/bakefile/optik/__init__.py
+  /usr/lib/bakefile/optik/__init__.pyc
+  /usr/lib/bakefile/optik/__init__.pyo
+  /usr/lib/bakefile/optik/errors.py
+  /usr/lib/bakefile/optik/errors.pyc
+  /usr/lib/bakefile/optik/errors.pyo
+  /usr/lib/bakefile/optik/help.py
+  /usr/lib/bakefile/optik/help.pyc
+  /usr/lib/bakefile/optik/help.pyo
+  /usr/lib/bakefile/optik/option.py
+  /usr/lib/bakefile/optik/option.pyc
+  /usr/lib/bakefile/optik/option.pyo
+  /usr/lib/bakefile/optik/option_parser.py
+  /usr/lib/bakefile/optik/option_parser.pyc
+  /usr/lib/bakefile/optik/option_parser.pyo
+  /usr/lib/bakefile/outmethods.py
+  /usr/lib/bakefile/outmethods.pyc
+  /usr/lib/bakefile/outmethods.pyo
+  /usr/lib/bakefile/portautils.py
+  /usr/lib/bakefile/portautils.pyc
+  /usr/lib/bakefile/portautils.pyo
+  /usr/lib/bakefile/reader.py
+  /usr/lib/bakefile/reader.pyc
+  /usr/lib/bakefile/reader.pyo
+  /usr/lib/bakefile/utils.py
+  /usr/lib/bakefile/utils.pyc
+  /usr/lib/bakefile/utils.pyo
+  /usr/lib/bakefile/writer.py
+  /usr/lib/bakefile/writer.pyc
+  /usr/lib/bakefile/writer.pyo
+  /usr/lib/bakefile/xmlparser.py
+  /usr/lib/bakefile/xmlparser.pyc
+  /usr/lib/bakefile/xmlparser.pyo
+  /usr/share/aclocal/bakefile-lang.m4
+  /usr/share/aclocal/bakefile.m4
+  /usr/share/bakefile/output/_hdr_config.empy
+  /usr/share/bakefile/output/_hdr_makefile.empy
+  /usr/share/bakefile/output/autoconf-macros.empy
+  /usr/share/bakefile/output/autoconf.empy
+  /usr/share/bakefile/output/borland-opts.empy
+  /usr/share/bakefile/output/borland.empy
+  /usr/share/bakefile/output/cbuilderx.py
+  /usr/share/bakefile/output/dmars-opts.empy
+  /usr/share/bakefile/output/dmars.empy
+  /usr/share/bakefile/output/dmars_smake.empy
+  /usr/share/bakefile/output/gnumake-opts.empy
+  /usr/share/bakefile/output/gnumake.empy
+  /usr/share/bakefile/output/msevc4prj.py
+  /usr/share/bakefile/output/msvc-opts.empy
+  /usr/share/bakefile/output/msvc.empy
+  /usr/share/bakefile/output/msvc6prj.py
+  /usr/share/bakefile/output/symbian.py
+  /usr/share/bakefile/output/watcom-opts.empy
+  /usr/share/bakefile/output/watcom.empy
+  /usr/share/bakefile/output/xcode2.py
+  /usr/share/bakefile/presets/fake.bkl
+  /usr/share/bakefile/presets/simple.bkl
+  /usr/share/bakefile/rules/FORMATS.bkmanifest
+  /usr/share/bakefile/rules/autoconf.bkl
+  /usr/share/bakefile/rules/borland.bkl
+  /usr/share/bakefile/rules/cbuilderx.bkl
+  /usr/share/bakefile/rules/common.bkl
+  /usr/share/bakefile/rules/datafiles.bkl
+  /usr/share/bakefile/rules/dirs.bkl
+  /usr/share/bakefile/rules/dmars.bkl
+  /usr/share/bakefile/rules/dmars_common.bkl
+  /usr/share/bakefile/rules/dmars_smake.bkl
+  /usr/share/bakefile/rules/format_features.bkl
+  /usr/share/bakefile/rules/gettext/autoconf.bkl
+  /usr/share/bakefile/rules/gettext/common.bkl
+  /usr/share/bakefile/rules/gnu.bkl
+  /usr/share/bakefile/rules/makefile.bkl
+  /usr/share/bakefile/rules/makefile_defs_borland.bkl
+  /usr/share/bakefile/rules/makefile_defs_cw.bkl
+  /usr/share/bakefile/rules/makefile_defs_dmars.bkl
+  /usr/share/bakefile/rules/makefile_defs_dmars_common.bkl
+  /usr/share/bakefile/rules/makefile_defs_dmars_smake.bkl
+  /usr/share/bakefile/rules/makefile_defs_gnu.bkl
+  /usr/share/bakefile/rules/makefile_defs_mingw.bkl
+  /usr/share/bakefile/rules/makefile_defs_msvc.bkl
+  /usr/share/bakefile/rules/makefile_defs_unix.bkl
+  /usr/share/bakefile/rules/makefile_defs_watcom.bkl
+  /usr/share/bakefile/rules/makefile_macres.bkl
+  /usr/share/bakefile/rules/makefile_mingw.bkl
+  /usr/share/bakefile/rules/makefile_os2.bkl
+  /usr/share/bakefile/rules/mingw.bkl
+  /usr/share/bakefile/rules/msevc4prj.bkl
+  /usr/share/bakefile/rules/msvc.bkl
+  /usr/share/bakefile/rules/msvc6prj.bkl
+  /usr/share/bakefile/rules/msvc_common.bkl
+  /usr/share/bakefile/rules/msvc_prj_common.bkl
+  /usr/share/bakefile/rules/symbian.bkl
+  /usr/share/bakefile/rules/unixlike.bkl
+  /usr/share/bakefile/rules/version.bkl
+  /usr/share/bakefile/rules/watcom.bkl
+  /usr/share/bakefile/rules/win32.bkl
+  /usr/share/bakefile/rules/xcode2.bkl
+  /usr/share/doc/Cygwin/bakefile-0.2.0.README
+  /usr/share/doc/bakefile-0.2.0/AUTHORS
+  /usr/share/doc/bakefile-0.2.0/COPYING
+  /usr/share/doc/bakefile-0.2.0/NEWS
+  /usr/share/doc/bakefile-0.2.0/README
+  /usr/share/doc/bakefile-0.2.0/THANKS
+  /usr/share/doc/bakefile-0.2.0/html/ch01.html
+  /usr/share/doc/bakefile-0.2.0/html/ch02.html
+  /usr/share/doc/bakefile-0.2.0/html/ch03.html
+  /usr/share/doc/bakefile-0.2.0/html/ch04.html
+  /usr/share/doc/bakefile-0.2.0/html/ch05.html
+  /usr/share/doc/bakefile-0.2.0/html/ch06.html
+  /usr/share/doc/bakefile-0.2.0/html/ch07.html
+  /usr/share/doc/bakefile-0.2.0/html/ch08.html
+  /usr/share/doc/bakefile-0.2.0/html/ch09.html
+  /usr/share/doc/bakefile-0.2.0/html/ch10.html
+  /usr/share/doc/bakefile-0.2.0/html/images
+  /usr/share/doc/bakefile-0.2.0/html/images/important.png
+  /usr/share/doc/bakefile-0.2.0/html/images/note.png
+  /usr/share/doc/bakefile-0.2.0/html/index.html
+  /usr/share/doc/bakefile-0.2.0/html/rn01.html
+  /usr/share/doc/bakefile-0.2.0/html/rn01re01.html
+  /usr/share/doc/bakefile-0.2.0/html/rn01re02.html
+  /usr/share/doc/bakefile-0.2.0/html/style.css
+  /usr/share/man/man1/bakefile.1.gz
+  /usr/share/man/man1/bakefilize.1.gz
+
+------------------
+
+Port Notes:
+
+----- version 0.2.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

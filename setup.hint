@@ -1,0 +1,8 @@
+category: Devel
+requires: cygwin bash python pylibxml2
+sdesc: "Bakefile makefile generator"
+ldesc: "Bakefile is cross-platform, cross-compiler native makefiles
+generator. It takes compiler-independent description of build tasks as
+input and generates native makefile (autoconf's Makefile.in, Visual C++
+project, bcc makefile etc.). Bakefile's task is to generate native
+makefiles, so that people can keep using their favorite tools."
