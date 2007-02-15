@@ -7,20 +7,20 @@ bcc makefile etc.). Bakefile's task is to generate native makefiles, so
 that people can keep using their favorite tools.
 
 Runtime requirements:
-  cygwin-1.5.20-1
-  pylibxml2-2.6.26-1
+  cygwin-1.5.24-2
+  pylibxml2
   python-2.4.3-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.20-1
-  autoconf2.5-2.59-2
-  automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.2-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
-  libtool1.5-1.5.22-1
+  cygwin-1.5.24-2
+  autoconf2.5-2.61-1
+  automake1.9-1.9.6-2
+  binutils-20060817-1
+  cygport-0.2.9-1
+  gawk-3.1.5-4
+  gcc-core-3.4.4-3
+  libtool1.5-1.5.23a-2
   make-3.80-1
   sed-4.1.5-1
   swig-1.3.25-1
@@ -34,15 +34,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack bakefile-0.2.0-X-src.tar.bz2
+  unpack bakefile-0.2.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./bakefile-0.2.0-X.cygport all
+  cygport ./bakefile-0.2.2-X.cygport all
 
 This will create:
-  /usr/src/bakefile-0.2.0-X-src.tar.bz2
-  /usr/src/bakefile-0.2.0-X.tar.bz2
+  /usr/src/bakefile-0.2.2-X-src.tar.bz2
+  /usr/src/bakefile-0.2.2-X.tar.bz2
 
 -------------------------------------------
 
@@ -95,27 +95,18 @@ Files included in the binary package:
   /usr/lib/bakefile/mk_dump.py
   /usr/lib/bakefile/mk_dump.pyc
   /usr/lib/bakefile/mk_dump.pyo
-  /usr/lib/bakefile/optik/__init__.py
-  /usr/lib/bakefile/optik/__init__.pyc
-  /usr/lib/bakefile/optik/__init__.pyo
-  /usr/lib/bakefile/optik/errors.py
-  /usr/lib/bakefile/optik/errors.pyc
-  /usr/lib/bakefile/optik/errors.pyo
-  /usr/lib/bakefile/optik/help.py
-  /usr/lib/bakefile/optik/help.pyc
-  /usr/lib/bakefile/optik/help.pyo
-  /usr/lib/bakefile/optik/option.py
-  /usr/lib/bakefile/optik/option.pyc
-  /usr/lib/bakefile/optik/option.pyo
-  /usr/lib/bakefile/optik/option_parser.py
-  /usr/lib/bakefile/optik/option_parser.pyc
-  /usr/lib/bakefile/optik/option_parser.pyo
   /usr/lib/bakefile/outmethods.py
   /usr/lib/bakefile/outmethods.pyc
   /usr/lib/bakefile/outmethods.pyo
   /usr/lib/bakefile/portautils.py
   /usr/lib/bakefile/portautils.pyc
   /usr/lib/bakefile/portautils.pyo
+  /usr/lib/bakefile/py25modules/__init__.py
+  /usr/lib/bakefile/py25modules/__init__.pyc
+  /usr/lib/bakefile/py25modules/__init__.pyo
+  /usr/lib/bakefile/py25modules/uuid.py
+  /usr/lib/bakefile/py25modules/uuid.pyc
+  /usr/lib/bakefile/py25modules/uuid.pyo
   /usr/lib/bakefile/reader.py
   /usr/lib/bakefile/reader.pyc
   /usr/lib/bakefile/reader.pyo
@@ -128,6 +119,7 @@ Files included in the binary package:
   /usr/lib/bakefile/xmlparser.py
   /usr/lib/bakefile/xmlparser.pyc
   /usr/lib/bakefile/xmlparser.pyo
+  /usr/share/aclocal/bakefile-dllar.m4
   /usr/share/aclocal/bakefile-lang.m4
   /usr/share/aclocal/bakefile.m4
   /usr/share/bakefile/output/_hdr_config.empy
@@ -146,6 +138,8 @@ Files included in the binary package:
   /usr/share/bakefile/output/msvc-opts.empy
   /usr/share/bakefile/output/msvc.empy
   /usr/share/bakefile/output/msvc6prj.py
+  /usr/share/bakefile/output/msvc_common.py
+  /usr/share/bakefile/output/msvs2005prj.py
   /usr/share/bakefile/output/symbian.py
   /usr/share/bakefile/output/watcom-opts.empy
   /usr/share/bakefile/output/watcom.empy
@@ -186,42 +180,49 @@ Files included in the binary package:
   /usr/share/bakefile/rules/msvc6prj.bkl
   /usr/share/bakefile/rules/msvc_common.bkl
   /usr/share/bakefile/rules/msvc_prj_common.bkl
+  /usr/share/bakefile/rules/msvc_prj_dsp_common.bkl
+  /usr/share/bakefile/rules/msvc_prj_vcproj_common.bkl
+  /usr/share/bakefile/rules/msvs2005prj.bkl
   /usr/share/bakefile/rules/symbian.bkl
   /usr/share/bakefile/rules/unixlike.bkl
   /usr/share/bakefile/rules/version.bkl
   /usr/share/bakefile/rules/watcom.bkl
   /usr/share/bakefile/rules/win32.bkl
   /usr/share/bakefile/rules/xcode2.bkl
-  /usr/share/doc/Cygwin/bakefile-0.2.0.README
-  /usr/share/doc/bakefile-0.2.0/AUTHORS
-  /usr/share/doc/bakefile-0.2.0/COPYING
-  /usr/share/doc/bakefile-0.2.0/NEWS
-  /usr/share/doc/bakefile-0.2.0/README
-  /usr/share/doc/bakefile-0.2.0/THANKS
-  /usr/share/doc/bakefile-0.2.0/html/ch01.html
-  /usr/share/doc/bakefile-0.2.0/html/ch02.html
-  /usr/share/doc/bakefile-0.2.0/html/ch03.html
-  /usr/share/doc/bakefile-0.2.0/html/ch04.html
-  /usr/share/doc/bakefile-0.2.0/html/ch05.html
-  /usr/share/doc/bakefile-0.2.0/html/ch06.html
-  /usr/share/doc/bakefile-0.2.0/html/ch07.html
-  /usr/share/doc/bakefile-0.2.0/html/ch08.html
-  /usr/share/doc/bakefile-0.2.0/html/ch09.html
-  /usr/share/doc/bakefile-0.2.0/html/ch10.html
-  /usr/share/doc/bakefile-0.2.0/html/images
-  /usr/share/doc/bakefile-0.2.0/html/images/important.png
-  /usr/share/doc/bakefile-0.2.0/html/images/note.png
-  /usr/share/doc/bakefile-0.2.0/html/index.html
-  /usr/share/doc/bakefile-0.2.0/html/rn01.html
-  /usr/share/doc/bakefile-0.2.0/html/rn01re01.html
-  /usr/share/doc/bakefile-0.2.0/html/rn01re02.html
-  /usr/share/doc/bakefile-0.2.0/html/style.css
+  /usr/share/doc/Cygwin/bakefile-0.2.2.README
+  /usr/share/doc/bakefile-0.2.2/AUTHORS
+  /usr/share/doc/bakefile-0.2.2/COPYING
+  /usr/share/doc/bakefile-0.2.2/NEWS
+  /usr/share/doc/bakefile-0.2.2/README
+  /usr/share/doc/bakefile-0.2.2/THANKS
+  /usr/share/doc/bakefile-0.2.2/html/ch01.html
+  /usr/share/doc/bakefile-0.2.2/html/ch02.html
+  /usr/share/doc/bakefile-0.2.2/html/ch03.html
+  /usr/share/doc/bakefile-0.2.2/html/ch04.html
+  /usr/share/doc/bakefile-0.2.2/html/ch05.html
+  /usr/share/doc/bakefile-0.2.2/html/ch06.html
+  /usr/share/doc/bakefile-0.2.2/html/ch07.html
+  /usr/share/doc/bakefile-0.2.2/html/ch08.html
+  /usr/share/doc/bakefile-0.2.2/html/ch09.html
+  /usr/share/doc/bakefile-0.2.2/html/ch10.html
+  /usr/share/doc/bakefile-0.2.2/html/images/important.png
+  /usr/share/doc/bakefile-0.2.2/html/images/note.png
+  /usr/share/doc/bakefile-0.2.2/html/index.html
+  /usr/share/doc/bakefile-0.2.2/html/rn01.html
+  /usr/share/doc/bakefile-0.2.2/html/rn01re01.html
+  /usr/share/doc/bakefile-0.2.2/html/rn01re02.html
+  /usr/share/doc/bakefile-0.2.2/html/rn01re03.html
+  /usr/share/doc/bakefile-0.2.2/html/style.css
   /usr/share/man/man1/bakefile.1.gz
+  /usr/share/man/man1/bakefile_gen.1.gz
   /usr/share/man/man1/bakefilize.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 0.2.2-1 -----
+Version bump.
 
 ----- version 0.2.0-1 -----
 Initial release for Cygwin.
