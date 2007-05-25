@@ -1,5 +1,5 @@
 category: Devel
-requires: cygwin bash python pylibxml2
+requires: cygwin bash python python-libxml2
 sdesc: "Bakefile makefile generator"
 ldesc: "Bakefile is cross-platform, cross-compiler native makefiles
 generator. It takes compiler-independent description of build tasks as

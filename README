@@ -8,8 +8,8 @@ that people can keep using their favorite tools.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  pylibxml2
-  python-2.4.3-1
+  python-2.5.1-1
+  python-libxml2-2.6.28-2
 
 Build requirements:
 (besides corresponding -devel packages)
@@ -17,7 +17,7 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.9-1
+  cygport-0.2.11-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
   libtool1.5-1.5.23a-2
@@ -29,7 +29,7 @@ Canonical website:
   http://bakefile.sourceforge.net/
 
 Canonical download:
-  http://prdownloads.sourceforge.net/bakefile/
+  http://downloads.sourceforge.net/bakefile/
 
 -------------------------------------------
 
@@ -220,6 +220,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.2.2-2 -----
+Rebuilt for python-2.5.
 
 ----- version 0.2.2-1 -----
 Version bump.
