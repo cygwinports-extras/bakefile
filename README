@@ -7,23 +7,22 @@ bcc makefile etc.). Bakefile's task is to generate native makefiles, so
 that people can keep using their favorite tools.
 
 Runtime requirements:
-  cygwin-1.5.24-2
-  python-2.5.1-1
-  python-libxml2-2.6.28-2
+  cygwin-1.5.25-7
+  python-2.5.1-3
+  python-libxml2-2.6.30-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.24-2
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.11-1
-  gawk-3.1.5-4
+  cygport-0.3.8-1
+  gawk-3.1.6-1
   gcc-core-3.4.4-3
   libtool1.5-1.5.23a-2
   make-3.80-1
   sed-4.1.5-1
-  swig-1.3.25-1
+  swig-1.3.33-1
 
 Canonical website:
   http://bakefile.sourceforge.net/
@@ -34,15 +33,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack bakefile-0.2.2-X-src.tar.bz2
+  unpack bakefile-0.2.3-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./bakefile-0.2.2-X.cygport all
+  cygport ./bakefile-0.2.3-X.cygport all
 
 This will create:
-  /usr/src/bakefile-0.2.2-X-src.tar.bz2
-  /usr/src/bakefile-0.2.2-X.tar.bz2
+  /usr/src/bakefile-0.2.3-X-src.tar.bz2
+  /usr/src/bakefile-0.2.3-X.tar.bz2
 
 -------------------------------------------
 
@@ -189,30 +188,30 @@ Files included in the binary package:
   /usr/share/bakefile/rules/watcom.bkl
   /usr/share/bakefile/rules/win32.bkl
   /usr/share/bakefile/rules/xcode2.bkl
-  /usr/share/doc/Cygwin/bakefile-0.2.2.README
-  /usr/share/doc/bakefile-0.2.2/AUTHORS
-  /usr/share/doc/bakefile-0.2.2/COPYING
-  /usr/share/doc/bakefile-0.2.2/NEWS
-  /usr/share/doc/bakefile-0.2.2/README
-  /usr/share/doc/bakefile-0.2.2/THANKS
-  /usr/share/doc/bakefile-0.2.2/html/ch01.html
-  /usr/share/doc/bakefile-0.2.2/html/ch02.html
-  /usr/share/doc/bakefile-0.2.2/html/ch03.html
-  /usr/share/doc/bakefile-0.2.2/html/ch04.html
-  /usr/share/doc/bakefile-0.2.2/html/ch05.html
-  /usr/share/doc/bakefile-0.2.2/html/ch06.html
-  /usr/share/doc/bakefile-0.2.2/html/ch07.html
-  /usr/share/doc/bakefile-0.2.2/html/ch08.html
-  /usr/share/doc/bakefile-0.2.2/html/ch09.html
-  /usr/share/doc/bakefile-0.2.2/html/ch10.html
-  /usr/share/doc/bakefile-0.2.2/html/images/important.png
-  /usr/share/doc/bakefile-0.2.2/html/images/note.png
-  /usr/share/doc/bakefile-0.2.2/html/index.html
-  /usr/share/doc/bakefile-0.2.2/html/rn01.html
-  /usr/share/doc/bakefile-0.2.2/html/rn01re01.html
-  /usr/share/doc/bakefile-0.2.2/html/rn01re02.html
-  /usr/share/doc/bakefile-0.2.2/html/rn01re03.html
-  /usr/share/doc/bakefile-0.2.2/html/style.css
+  /usr/share/doc/Cygwin/bakefile-0.2.3.README
+  /usr/share/doc/bakefile-0.2.3/AUTHORS
+  /usr/share/doc/bakefile-0.2.3/COPYING
+  /usr/share/doc/bakefile-0.2.3/NEWS
+  /usr/share/doc/bakefile-0.2.3/README
+  /usr/share/doc/bakefile-0.2.3/THANKS
+  /usr/share/doc/bakefile-0.2.3/html/ch01.html
+  /usr/share/doc/bakefile-0.2.3/html/ch02.html
+  /usr/share/doc/bakefile-0.2.3/html/ch03.html
+  /usr/share/doc/bakefile-0.2.3/html/ch04.html
+  /usr/share/doc/bakefile-0.2.3/html/ch05.html
+  /usr/share/doc/bakefile-0.2.3/html/ch06.html
+  /usr/share/doc/bakefile-0.2.3/html/ch07.html
+  /usr/share/doc/bakefile-0.2.3/html/ch08.html
+  /usr/share/doc/bakefile-0.2.3/html/ch09.html
+  /usr/share/doc/bakefile-0.2.3/html/ch10.html
+  /usr/share/doc/bakefile-0.2.3/html/images/important.png
+  /usr/share/doc/bakefile-0.2.3/html/images/note.png
+  /usr/share/doc/bakefile-0.2.3/html/index.html
+  /usr/share/doc/bakefile-0.2.3/html/rn01.html
+  /usr/share/doc/bakefile-0.2.3/html/rn01re01.html
+  /usr/share/doc/bakefile-0.2.3/html/rn01re02.html
+  /usr/share/doc/bakefile-0.2.3/html/rn01re03.html
+  /usr/share/doc/bakefile-0.2.3/html/style.css
   /usr/share/man/man1/bakefile.1.gz
   /usr/share/man/man1/bakefile_gen.1.gz
   /usr/share/man/man1/bakefilize.1.gz
@@ -220,6 +219,9 @@ Files included in the binary package:
 ------------------
 
 Port Notes:
+
+----- version 0.2.3-1 -----
+Version bump.
 
 ----- version 0.2.2-2 -----
 Rebuilt for python-2.5.
